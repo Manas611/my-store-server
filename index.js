@@ -41,6 +41,6 @@ app.get('/buy',(req,res)=>{
     .catch(err=> res.json(err))
 })
 
-app.listen(4000, () => {
+app.listen(8888, () => {
     console.log('server is running');
 })
