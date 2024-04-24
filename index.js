@@ -3,6 +3,8 @@ const mongoose = require('mongoose')
 const cors = require('cors')
 const DetailsModel = require('./models/CarDetails')
 const dontenv = require('dotenv').config()
+const port = process.env.PORT || 4000;
+
 
 // console.log(dontenv);
 
@@ -41,6 +43,8 @@ app.get('/buy',(req,res)=>{
     .catch(err=> res.json(err))
 })
 
-app.listen(7777, () => {
-    console.log('server is running');
+
+
+app.listen(port, () => {
+    console.log(`server is running ${port}`);
 })
