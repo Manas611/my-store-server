@@ -9,6 +9,7 @@ const port = process.env.PORT || 4000;
 // console.log(dontenv);
 
 const app = express()
+// console.log('11');
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(cors())
