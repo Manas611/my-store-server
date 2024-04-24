@@ -21,7 +21,7 @@ mongoose.connect(process.env.URI, {
 
 app.get('/', (req, res) => {
     // res.send("THIS is a data")
-    console.log('hiiii');
+    // console.log('hiiii');
 })
 
 // Title, Year, Km, Fuel, Transmision, Price [Sell/ Form]
