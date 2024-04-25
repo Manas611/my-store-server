@@ -5,13 +5,14 @@ const DetailsModel = require('./models/CarDetails')
 const dontenv = require('dotenv').config()
 const port = process.env.PORT || 4000;
 const bodyParser = require("body-parser");
-const app = express()
 
 
 // console.log(dontenv);
+const app = express()
 app.use(bodyParser.json({limit: '50mb'}));
 app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
 app.use(express.json());
+app.use(express.urlencoded({extended:true}))
 
 // console.log('11');
 // app.use(express.json())
